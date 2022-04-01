@@ -1,22 +1,65 @@
 <template>
   <div id="app">
-    <h1>Игра Саймон говорит</h1>
-    <GameBoard />
+    <SimonGame />
   </div>
 </template>
 
 <script>
-import GameBoard from "./components/GameBoard";
-export default {
-  name: "App",
-  components: {
-    GameBoard,
-  },
-};
+	import SimonGame from '@/components/SimonGame';
+
+	export default {
+		name: 'App',
+		components: {
+			SimonGame,
+		},
+	};
 </script>
 
-<style scoped>
-h1 {
-  text-align: center;
-}
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		color: var(--font-color);
+		font-size: 16px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	body {
+		padding: 0;
+		margin: 0;
+	}
+
+	:root {
+		--font-color: hsl(0, 0%, 21%);
+		--heading-color: hsl(0, 0%, 4%);
+		--red-color: hsl(6, 78%, 62%);
+		--red-color-active: hsl(6, 78%, 52%);
+		--red-color-hover: hsl(6, 78%, 47%);
+		--blue-color: hsl(204, 70%, 58%);
+		--blue-color-active: hsl(204, 70%, 48%);
+		--blue-color-hover: hsl(204, 70%, 43%);
+		--yellow-color: hsl(48, 89%, 55%);
+		--yellow-color-active: hsl(48, 89%, 45%);
+		--yellow-color-hover: hsl(48, 89%, 40%);
+		--green-color: hsl(145, 63%, 54%);
+		--green-color-active: hsl(145, 63%, 44%);
+		--green-color-hover: hsl(145, 63%, 39%);
+
+		--smartphone-min-width: 320px;
+		--smartphone-max-width: 480px;
+		--tablet-min-width: 768px;
+		--tablet-max-width: 1024px;
+		--desktop-min-width: 1224px;
+		--large-screen-min-width: 1824px;
+	}
+
+	#app {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+    padding: 30px;
+	}
 </style>
