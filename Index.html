@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра Саймон говорит</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="game">
+      <Button class="green"></Button>
+      <Button class="red"></Button>
+      <Button class="blue"></Button>
+      <Button class="yellow"></Button>
+    </div>
+    <div class="options">
+      <h2>Раунд :</h2>
+      <button class="start">Старт</button>
+      <p data-action="lose">Вы проиграли после <span data-round="0"></span> раунда</p>
+    </div>
+    <div class="difficult">
+      <h2>Сложность:</h2>
+      <label><input type="radio" name="mode" value="easy" checked>Легко<br></label>
+      <label><input type="radio" name="mode" value="hard">Сложно<br></label>
+      <label><input type="radio" name="mode" value="vhard">Очень Сложно<br></label>
+    </div>
+    <noscript>
+      <H1>Для работы игры требуется JavaScript.</H1>
+    </noscript>
+  </div>
+</body>
+
+</html>
